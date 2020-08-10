@@ -8,8 +8,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
-
-export class CoinbaseBTCHub extends Component {
+export class BitcoinPricelist extends Component {
   constructor(props) {
     super(props);
 
@@ -92,8 +91,8 @@ export class CoinbaseBTCHub extends Component {
         justify="center"
         style={{ minHeight: '100vh' }}
       >
-        {this.state.prices.slice().reverse().map((price) => (
-          <Grid item>
+        {this.state.prices.slice().reverse().map((price, index) => (
+          <Grid item key={index}>
             <Card className={classes.root}>
               <CardContent>
                 <Typography className={classes.title} color="textSecondary" gutterBottom>

@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Route } from 'react-router';
-import { CoinbaseBTCHub } from './api/coinbase-api';
+import { BitcoinPricelist } from './components/BitcoinPricelist';
 
 export default class App extends Component {
 
   render() {
     return (
       <div>
-        <Route exact path='/' component={CoinbaseBTCHub} />
-        <Route path="/chat" component={CoinbaseBTCHub} />
+        <Route exact path='/' component={BitcoinPricelist} />
       </div>
     );
   }
