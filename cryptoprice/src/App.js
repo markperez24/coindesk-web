@@ -8,6 +8,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <h2 className="App">Real-Time Cryptocurrency Ticker</h2>
         <Route exact path='/' component={BitcoinPricelist} />
       </div>
     );
